@@ -1,0 +1,23 @@
+input {
+    background-color: green;
+    border-color: aqua;
+    margin-left: 3px;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.manga {
+    margin-left: 450px;
+
+
+}
+
+button {
+    background-color: green;
+    color: white;
+    margin-left: 100px;
+
+
+
+}
