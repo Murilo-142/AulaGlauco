@@ -1,6 +1,19 @@
 <form>
-   <input>
-   <input>
-   <button>Somar</button>
-   <label></label>
+   <input type="number" [(ngModel)]="num1" name="num1">
+   <input type="number" [(ngModel)]="num2" name="num2">
+   
+   <button (click)="onClickSum(); showResult('sum')">Somar</button>
+   <button (click)="onClickSub(); showResult('sub')">Subtrair</button>
+   <button (click)="onClickMul(); showResult('mul')">Multiplicar</button>
+   <button (click)="onClickDiv(); showResult('div')">Dividir</button>
+   <button (click)="onClickExp(); showResult('exp')">exponenciação</button>
+   <button (click)="onClickRaiz(); showResult('raiz')">raiz quadrada(um número de cada vez)</button>
+
+   <label *ngIf="resultType === 'sum'">{{ sum }}</label>
+   <label *ngIf="resultType === 'sub'">{{ sub }}</label>
+   <label *ngIf="resultType === 'mul'">{{ mul }}</label>
+   <label *ngIf="resultType === 'div'">{{ div }}</label>
+   <label *ngIf="resultType === 'exp'">{{ exp }}</label>
+   <label *ngIf="resultType === 'raiz'">{{ raiz }}</label>
+
 </form>

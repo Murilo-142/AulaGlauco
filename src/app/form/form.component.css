@@ -1,5 +1,5 @@
 form {
-    background: white;
+    background: Grey;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -9,11 +9,12 @@ form {
     width: 300px;
 }
 
-input {
+input, label {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    background-color: white;
 }
 
 button {
